@@ -23,19 +23,19 @@ public class Test {
             //选择
             switch (i){
                 case 1:
-                    Service.show();
+                   new Service().show();
                     break;
                 case 2:
-                    Service.oneShow();
+                    new Service().oneShow();
                     break;
                 case 3:
-                    Service.update();
+                    new Service().update();
                     break;
                 case 4:
-                    Service.delete();
+                    new Service().delete();
                     break;
                 case 5:
-                    Service.add();
+                    new Service().add();
                     break;
                 case -1:
                     System.out.println("再见");

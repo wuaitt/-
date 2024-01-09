@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class Service {
 
     //定义一个电话本集合存储数据
-    static ArrayList<PhoneBooks> books = new ArrayList<>();
+     ArrayList<PhoneBooks> books = new ArrayList<>();
     //创建添加用户信息
-    public static void add(){
+    public  void add(){
         PhoneBooks phoneBooks = new PhoneBooks();
         //定义一个集合进行存储信息
 
@@ -45,14 +45,14 @@ public class Service {
     }
 
     //创建查看所有联系人的方法
-    public static void show(){
+    public  void show(){
         for (PhoneBooks book : books) {
             System.out.println(book.toString());
         }
     }
 
     //根据手机号查看默认的详细信息
-    public static void oneShow(){
+    public  void oneShow(){
         System.out.println("请输入要查询的手机号");
         Scanner scanner = new Scanner(System.in);
         String next = scanner.next();
@@ -73,7 +73,7 @@ public class Service {
     }
 
     //根据手机号删除联系人
-    public static void delete(){
+    public  void delete(){
         System.out.println("请输入要删除的手机号");
         Scanner scanner = new Scanner(System.in);
         String next = scanner.next();
@@ -94,7 +94,7 @@ public class Service {
         }
     }
     //根据手机号修改姓名和性别
-    public static void update(){
+    public  void update(){
         System.out.println("请输入要修改信息的手机号");
         Scanner scanner = new Scanner(System.in);
         String next = scanner.next();
